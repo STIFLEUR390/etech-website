@@ -53,12 +53,16 @@ const metrics = [
 ]
 
 const clients = [
-  { name: 'IDCAM', sector: 'Assurance' },
-  { name: 'PASSCAM', sector: 'Assurance' },
-  { name: 'CPA', sector: 'Banque' },
-  { name: 'BELIFE', sector: 'Assurance' },
-  { name: 'MTN', sector: 'Télécom' },
-  { name: 'Orange', sector: 'Télécom' },
+  { name: 'IDCAM', icon: Shield, color: '#1FA971', title: 'Sécurité · 12.3M SMS' },
+  { name: 'PASSCAM', icon: CheckCircle2, color: '#1877F2', title: 'Identification · 3.1M SMS' },
+  { name: 'EJARA', icon: Building2, color: '#C9A227', title: 'Fintech · 574K SMS' },
+  { name: 'CCC-PLC', icon: Building2, color: '#7c3aed', title: 'Organisation · 486K SMS' },
+  { name: 'FIGEC', icon: Building2, color: '#0891b2', title: 'Finance · 425K SMS' },
+  { name: 'MUFID', icon: Building2, color: '#d97706', title: 'Finance · 354K SMS' },
+  { name: 'AGC', icon: Building2, color: '#059669', title: 'Entreprise · 287K SMS' },
+  { name: 'SURETECH', icon: Building2, color: '#0284c7', title: 'Tech · 221K SMS' },
+  { name: 'SOCEC BT', icon: Building2, color: '#9AA5A0', title: '183K SMS' },
+  { name: 'Ajax Cash', icon: Building2, color: '#9AA5A0', title: '120K SMS' },
 ]
 
 const metaPermissions = [
@@ -195,16 +199,15 @@ const metaPermissions = [
         <p class="text-center text-sm font-semibold text-brand-slate dark:text-gray-400 uppercase tracking-wider mb-10">
           {{ t('trust.title') }}
         </p>
-        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-14">
+        <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6">
           <div
             v-for="client in clients"
             :key="client.name"
-            class="flex flex-col items-center gap-1 opacity-60 hover:opacity-100 transition-opacity"
+            class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-brand-dark/50 border border-gray-200 dark:border-white/10 opacity-70 hover:opacity-100 transition-opacity"
+            :title="client.title"
           >
-            <div class="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-white dark:bg-brand-dark border border-gray-200 dark:border-white/10 flex items-center justify-center">
-              <span class="text-lg md:text-xl font-bold text-brand-dark dark:text-white">{{ client.name }}</span>
-            </div>
-            <span class="text-xs text-brand-slate dark:text-gray-500">{{ client.sector }}</span>
+            <component :is="client.icon" :size="20" :style="{ color: client.color }" />
+            <span class="text-sm font-semibold text-brand-dark dark:text-white">{{ client.name }}</span>
           </div>
         </div>
       </div>
