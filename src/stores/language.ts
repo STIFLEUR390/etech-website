@@ -1,6 +1,6 @@
 import { ref, watch } from 'vue'
 import { defineStore } from 'pinia'
-import { useI18n } from 'vue-i18n'
+import { i18n } from '@/i18n'
 
 export const useLanguageStore = defineStore('language', () => {
   const currentLocale = ref<string>(
@@ -16,24 +16,13 @@ export const useLanguageStore = defineStore('language', () => {
     currentLocale.value = currentLocale.value === 'fr' ? 'en' : 'fr'
   }
 
-  // Sync with localStorage
+  // Sync with localStorage and vue-i18n
   watch(currentLocale, (locale) => {
     localStorage.setItem('etech-lang', locale)
     document.documentElement.lang = locale
+    // Directly update vue-i18n locale
+    i18n.global.locale.value = locale as 'fr' | 'en'
   }, { immediate: true })
 
   return { currentLocale, setLocale, toggle }
 })
-
-// Composable to use i18n with the store
-export function useI18nWithStore() {
-  const { locale } = useI18n()
-  const store = useLanguageStore()
-
-  // Sync store locale with vue-i18n
-  watch(() => store.currentLocale, (newLocale) => {
-    locale.value = newLocale
-  }, { immediate: true })
-
-  return { ...store, locale }
-}

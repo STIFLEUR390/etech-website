@@ -7,7 +7,7 @@ const savedLang = localStorage.getItem('etech-lang')
 const browserLang = navigator.language.startsWith('fr') ? 'fr' : 'en'
 const defaultLocale = savedLang || browserLang
 
-const i18n = createI18n({
+export const i18n = createI18n({
   legacy: false,
   locale: defaultLocale,
   fallbackLocale: 'fr',

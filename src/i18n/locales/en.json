@@ -5,6 +5,7 @@
     "pricing": "Pricing",
     "docs": "API Documentation",
     "contact": "Contact",
+    "status": "API Status",
     "cta": "Try the API",
     "clientArea": "Client Area"
   },
@@ -190,6 +191,23 @@
         "description": "Integrate automatic SMS sending via our API into your information system. Alerts, OTP, confirmations, account statements.",
         "features": ["HTTPS / SMPP API integration", "Secure OTP codes", "Banking transaction alerts", "Order confirmations"]
       }
+    },
+    "features": {
+      "title": "Everything you need",
+      "delivery": { "title": "Delivery receipt", "desc": "Check the status of each SMS sent via our real-time reporting interface." },
+      "import": { "title": "Import contacts", "desc": "Import and export your contacts from a CSV, Excel file or via API." },
+      "personalization": { "title": "Personalization", "desc": "Custom sender name, variable messages per recipient, scheduled sending." },
+      "platform": { "title": "Intuitive platform", "desc": "Simple, user-friendly web interface to manage your sends, groups and reports." }
+    },
+    "industries": {
+      "title": "Who uses our Bulk SMS?",
+      "retail": { "name": "Retail & Commerce", "items": ["Stores, supermarkets", "Marketing & event agencies", "Radio and TV stations", "E-commerce platforms"] },
+      "finance": { "name": "Business & Finance", "items": ["Banks and cooperatives", "Insurance companies", "Public services & NGOs", "Transport & logistics"] },
+      "developers": { "name": "Developers & Startups", "items": ["Web & mobile apps", "E-commerce platforms", "Fintech & mobile payments", "Information systems"] }
+    },
+    "cta": {
+      "title": "Ready to send your first bulk SMS?",
+      "description": "Create your free account and test the platform in minutes."
     }
   },
   "pricing": {

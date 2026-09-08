@@ -8,22 +8,22 @@ const { t } = useI18n()
 const currentYear = new Date().getFullYear()
 
 const serviceLinks = [
-  { label: 'WhatsApp Business API', to: '/whatsapp-api' },
-  { label: 'Bulk SMS', to: '/sms-telecom' },
-  { label: 'Code USSD', to: '/sms-telecom' },
-  { label: 'Numéro Court', to: '/sms-telecom' },
-  { label: 'Documentation API', to: '/docs' },
+  { key: 'whatsapp', to: '/whatsapp-api' },
+  { key: 'sms', to: '/sms-telecom' },
+  { key: 'ussd', to: '/sms-telecom' },
+  { key: 'shortNumber', to: '/sms-telecom' },
+  { key: 'api', to: '/docs' },
 ]
 
 const companyLinks = [
-  { label: 'Tarifs', to: '/tarifs' },
-  { label: 'Contact', to: '/contact' },
-  { label: 'Status API', to: '#', external: false },
+  { key: 'pricing', to: '/tarifs' },
+  { key: 'contact', to: '/contact' },
+  { key: 'status', to: '#' },
 ]
 
 const legalLinks = [
-  { label: 'CGU', to: '#' },
-  { label: 'Confidentialité', to: '#' },
+  { key: 'cgu', to: '#' },
+  { key: 'privacy', to: '#' },
 ]
 </script>
 
@@ -56,12 +56,12 @@ const legalLinks = [
         <div>
           <h3 class="text-white font-semibold mb-4">{{ t('footer.services') }}</h3>
           <ul class="space-y-3">
-            <li v-for="link in serviceLinks" :key="link.label">
+            <li v-for="link in serviceLinks" :key="link.key">
               <RouterLink
                 :to="link.to"
                 class="text-sm hover:text-brand-green transition-colors"
               >
-                {{ link.label }}
+                {{ t(`services.items.${link.key}.title`) }}
               </RouterLink>
             </li>
           </ul>
@@ -71,12 +71,12 @@ const legalLinks = [
         <div>
           <h3 class="text-white font-semibold mb-4">{{ t('footer.company') }}</h3>
           <ul class="space-y-3">
-            <li v-for="link in companyLinks" :key="link.label">
+            <li v-for="link in companyLinks" :key="link.key">
               <RouterLink
                 :to="link.to"
                 class="text-sm hover:text-brand-green transition-colors"
               >
-                {{ link.label }}
+                {{ t(`nav.${link.key}`) }}
               </RouterLink>
             </li>
           </ul>
@@ -116,11 +116,11 @@ const legalLinks = [
         <div class="flex items-center gap-6">
           <RouterLink
             v-for="link in legalLinks"
-            :key="link.label"
+            :key="link.key"
             :to="link.to"
             class="text-sm hover:text-brand-green transition-colors"
           >
-            {{ link.label }}
+            {{ t(`footer.${link.key}`) }}
           </RouterLink>
         </div>
       </div>

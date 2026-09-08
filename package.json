@@ -43,6 +43,7 @@
     "vite": "^8.1.5",
     "vite-plugin-vue-devtools": "^8.1.5",
     "vue-eslint-parser": "^10.4.1",
+    "vue-i18n-extract": "^2.0.7",
     "vue-tsc": "^3.3.7"
   },
   "engines": {

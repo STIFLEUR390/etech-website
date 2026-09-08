@@ -32,16 +32,16 @@ const operators = [
 ]
 
 const features = [
-  { key: 'Accusé de réception', desc: 'Vérifiez le statut de chaque SMS envoyé via notre interface de rapports en temps réel.', icon: CheckCircle2 },
-  { key: 'Import contacts', desc: 'Importez et exportez vos contacts depuis un fichier CSV, Excel ou via API.', icon: Upload },
-  { key: 'Personnalisation', desc: 'Sender name personnalisé, messages variables par destinataire, envoi différé.', icon: Settings },
-  { key: 'Plateforme intuitive', desc: 'Interface web simple et conviviale pour gérer vos envois, groupes et rapports.', icon: Globe },
+  { key: 'delivery', icon: CheckCircle2 },
+  { key: 'import', icon: Upload },
+  { key: 'personalization', icon: Settings },
+  { key: 'platform', icon: Globe },
 ]
 
 const industries = [
-  { key: 'Grande Distribution & Commerce', items: ['Magasins, supermarchés', 'Agences marketing & événementiel', 'Radios et télévisions'] },
-  { key: 'Entreprises & Finance', items: ['Banques et coopératives', 'Assurances', 'Services publics & ONG', 'Transport & logistique'] },
-  { key: 'Développeurs & Startups', items: ['Applications web & mobile', 'Plateformes e-commerce', 'Fintech & paiement mobile', 'Systèmes d\'information'] },
+  { key: 'retail' },
+  { key: 'finance' },
+  { key: 'developers' },
 ]
 
 const smsApiCode = `GET sms.etech-keys.com/ss/envoyer.php?login=VOTRE_LOGIN&password=VOTRE_MDP&sender=ETECH+KEYS&tel=237695686207&text=Bonjour+!`
@@ -180,7 +180,7 @@ NPI: 0`
       <div class="container-custom">
         <div class="text-center max-w-2xl mx-auto mb-16">
           <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark dark:text-white">
-            Tout ce qu'il vous faut
+            {{ t('smsTelecom.features.title') }}
           </h2>
         </div>
 
@@ -193,8 +193,8 @@ NPI: 0`
             <div class="w-12 h-12 rounded-xl bg-brand-green-light dark:bg-brand-green/10 flex items-center justify-center mx-auto mb-4">
               <component :is="feat.icon" :size="24" class="text-brand-green" />
             </div>
-            <h3 class="font-bold text-brand-dark dark:text-white mb-2">{{ feat.key }}</h3>
-            <p class="text-sm text-brand-slate dark:text-gray-400">{{ feat.desc }}</p>
+            <h3 class="font-bold text-brand-dark dark:text-white mb-2">{{ t(`smsTelecom.features.${feat.key}.title`) }}</h3>
+            <p class="text-sm text-brand-slate dark:text-gray-400">{{ t(`smsTelecom.features.${feat.key}.desc`) }}</p>
           </div>
         </div>
       </div>
@@ -205,7 +205,7 @@ NPI: 0`
       <div class="container-custom">
         <div class="text-center max-w-2xl mx-auto mb-16">
           <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark dark:text-white">
-            Qui utilise notre Bulk SMS ?
+            {{ t('smsTelecom.industries.title') }}
           </h2>
         </div>
 
@@ -215,11 +215,11 @@ NPI: 0`
             :key="ind.key"
             class="p-6 rounded-2xl bg-white dark:bg-brand-dark/50 border border-gray-200 dark:border-white/10"
           >
-            <h3 class="font-bold text-brand-dark dark:text-white mb-4">{{ ind.key }}</h3>
+            <h3 class="font-bold text-brand-dark dark:text-white mb-4">{{ t(`smsTelecom.industries.${ind.key}.name`) }}</h3>
             <ul class="space-y-2">
-              <li v-for="item in ind.items" :key="item" class="flex items-center gap-2">
+              <li v-for="(_, idx) in 4" :key="idx" class="flex items-center gap-2">
                 <CheckCircle2 :size="14" class="text-brand-green shrink-0" />
-                <span class="text-sm text-brand-slate dark:text-gray-400">{{ item }}</span>
+                <span class="text-sm text-brand-slate dark:text-gray-400">{{ t(`smsTelecom.industries.${ind.key}.items[${idx}]`) }}</span>
               </li>
             </ul>
           </div>
@@ -232,7 +232,7 @@ NPI: 0`
       <div class="container-custom">
         <div class="text-center max-w-2xl mx-auto mb-16">
           <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark dark:text-white">
-            API HTTPS & SMPP disponibles
+            {{ t('docs.title') }}
           </h2>
         </div>
 
@@ -248,10 +248,10 @@ NPI: 0`
     <section class="section-padding bg-brand-dark">
       <div class="container-custom text-center max-w-3xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">
-          Prêt à envoyer votre premier SMS en masse ?
+          {{ t('smsTelecom.cta.title') }}
         </h2>
         <p class="text-lg text-gray-300 mb-8">
-          Créez votre compte gratuitement et testez la plateforme en quelques minutes.
+          {{ t('smsTelecom.cta.description') }}
         </p>
         <BaseButton to="/contact" variant="primary" color="green" size="lg">
           {{ t('cta.createAccount') }}
