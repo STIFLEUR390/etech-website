@@ -1,0 +1,246 @@
+{
+  "nav": {
+    "services": "Services",
+    "whatsapp": "Meta WhatsApp",
+    "pricing": "Pricing",
+    "docs": "API Documentation",
+    "contact": "Contact",
+    "cta": "Try the API",
+    "clientArea": "Client Area"
+  },
+  "hero": {
+    "badge": "🏆 Official Meta Tech Provider",
+    "title": "The leading SMS, WhatsApp Business API & USSD platform in Cameroon",
+    "subtitle": "Send OTPs, notifications and campaigns to your customers in under 2 seconds with a unified API.",
+    "cta": "Get started for free",
+    "ctaSecondary": "View API Demo"
+  },
+  "metrics": {
+    "openRate": "WhatsApp open rate",
+    "openRateValue": "98%",
+    "deliveryTime": "SMS delivery time",
+    "deliveryTimeValue": "<2s",
+    "operators": "Connected operators",
+    "operatorsValue": "4",
+    "support": "Technical Support",
+    "supportValue": "24/7"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Complete solutions for your communication",
+    "description": "From SMS messaging to cloud and WhatsApp Business — everything you need.",
+    "items": {
+      "whatsapp": {
+        "title": "WhatsApp Business API",
+        "description": "Send professional WhatsApp messages. Templates, notifications, OTP, marketing. Connect your own WABA autonomously.",
+        "cta": "Learn more"
+      },
+      "sms": {
+        "title": "Bulk SMS",
+        "description": "Bulk SMS to MTN, Orange, Nexttel, Camtel. HTTPS and SMPP API. Real-time DLR reports. Transparent pricing.",
+        "cta": "Learn more"
+      },
+      "shortNumber": {
+        "title": "Short Number",
+        "description": "Dedicated and shared short numbers. Contests, surveys, polls. Compatible with two-way SMS.",
+        "cta": "Learn more"
+      },
+      "ussd": {
+        "title": "USSD Code",
+        "description": "Create interactive USSD services for your clients. Mobile payment, money transfer, information. No internet needed.",
+        "cta": "Learn more"
+      },
+      "voiceServer": {
+        "title": "Voice Server",
+        "description": "IVR, pre-recorded messages, automated voice campaigns. Notifications and alerts by phone call.",
+        "cta": "Learn more"
+      },
+      "callCenter": {
+        "title": "Call Center",
+        "description": "Professional call center with real-time supervision, recording, scripts and advanced reporting.",
+        "cta": "Learn more"
+      },
+      "cloud": {
+        "title": "Cloud Hosting",
+        "description": "Dedicated servers, VPS, high availability web hosting. Secure and scalable infrastructure for your applications.",
+        "cta": "Learn more"
+      },
+      "api": {
+        "title": "HTTPS / SMPP API",
+        "description": "Integrate our services into your applications. Complete documentation, SDKs, DLR webhooks. 24/7 developer support.",
+        "cta": "Documentation"
+      },
+      "wabaConnect": {
+        "title": "Autonomous WABA Connection",
+        "description": "Connect your own WhatsApp Business Account in 3 minutes via our Meta Embedded Signup. No technical intervention needed.",
+        "cta": "Connect my WABA"
+      }
+    }
+  },
+  "trust": {
+    "title": "They trust us"
+  },
+  "metaProvider": {
+    "title": "ETECH KEYS is an official Meta WhatsApp Business Tech Provider",
+    "description": "As an approved Tech Provider, we can connect your business directly to the WhatsApp Business API with all advanced permissions.",
+    "app_id": "App ID",
+    "waba": "Main WABA",
+    "business_manager": "Business Manager ID",
+    "status": "Status",
+    "live": "Live — Advanced Access"
+  },
+  "cta": {
+    "ready": "Ready to boost your communication?",
+    "readyDescription": "Create your free account and send your first SMS in less than 5 minutes.",
+    "createAccount": "Create free account"
+  },
+  "footer": {
+    "description": "ETECH KEYS — Official Meta WhatsApp Business Tech Provider. SMS, WhatsApp, USSD and Cloud solutions in Cameroon.",
+    "services": "Services",
+    "company": "Company",
+    "legal": "Legal",
+    "contact": "Contact",
+    "address": "Douala, Cameroon",
+    "cgu": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "status": "API Status",
+    "copyright": "© 2024 ETECH KEYS. All rights reserved.",
+    "metaBadge": "Official Meta Tech Provider"
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Let's talk about your project",
+    "description": "Our team responds within 24h. For emergencies, contact us directly via WhatsApp.",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "service": "Service of interest",
+      "message": "Your message",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "An error occurred. Please try again."
+    },
+    "services": {
+      "whatsapp": "WhatsApp Business API",
+      "sms": "Bulk SMS",
+      "ussd": "USSD Code",
+      "shortNumber": "Short Number",
+      "voice": "Voice Server",
+      "cloud": "Cloud Hosting",
+      "other": "Other"
+    },
+    "whatsapp": {
+      "title": "Chat on WhatsApp 24/7",
+      "description": "For emergencies, contact us directly on WhatsApp."
+    }
+  },
+  "whatsappApi": {
+    "title": "WhatsApp Business API",
+    "subtitle": "Connect your WABA autonomously via Embedded Signup",
+    "features": {
+      "templates": "Approved Templates",
+      "templatesDesc": "Create and submit your Meta templates. Utility, Marketing, Authentication. Managed from the portal.",
+      "embeddedSignup": "Embedded Signup",
+      "embeddedSignupDesc": "Connect your own WABA in 3 minutes. Automatic webhook subscription. Long-lived token.",
+      "notifications": "Notifications & OTP",
+      "notificationsDesc": "Alerts, confirmations, verification codes. Guaranteed delivery with real-time DLR status.",
+      "richMedia": "Rich Media",
+      "richMediaDesc": "Images, PDF documents, videos, interactive buttons. Complete conversational experience.",
+      "api": "REST API",
+      "apiDesc": "Simple and well-documented API. Webhooks for received messages and DLR. SDKs available.",
+      "analytics": "Reports & Analytics",
+      "analyticsDesc": "Real-time dashboard. Delivery rates, read rates, stats by template and client."
+    },
+    "messageTypes": {
+      "title": "Choose the right template type",
+      "utility": "UTILITY",
+      "utilityDesc": "Transactional notifications, order confirmations, deadline reminders, delivery status.",
+      "authentication": "AUTHENTICATION",
+      "authenticationDesc": "OTP codes, identity verification, two-factor authentication. Secure Meta format.",
+      "marketing": "MARKETING",
+      "marketingDesc": "Promotions, special offers, birthdays, newsletters. Customer engagement and loyalty."
+    },
+    "embeddedSignup": {
+      "title": "Connect your own WABA autonomously",
+      "description": "As an approved Meta Tech Provider, ETECH KEYS allows you to connect your WhatsApp Business account directly from our portal, with no technical intervention.",
+      "step1": "Meta authentication (secure popup)",
+      "step2": "WABA & number selection",
+      "step3": "Token generation + webhook subscription",
+      "step4": "✅ Active account — ready to send"
+    }
+  },
+  "smsTelecom": {
+    "title": "Bulk SMS broadcasting to all Cameroon operators",
+    "subtitle": "Alerts, notifications, OTP, marketing campaigns. MTN, Orange, Nexttel and Camtel. Instant delivery with real-time delivery receipts.",
+    "deliveryRate": "Delivery rate",
+    "deliveryTime": "Delivery time",
+    "operators": "Operators covered",
+    "offers": {
+      "title": "Our SMS offers",
+      "subtitle": "Two types of SMS services",
+      "promotional": {
+        "title": "Promotional SMS",
+        "description": "Mass SMS sending in real-time or scheduled for marketing campaigns, promotions, events. Sender name customization.",
+        "features": ["Targeted marketing campaigns", "Immediate or scheduled sending", "Custom sender name", "Detailed delivery reports"]
+      },
+      "notification": {
+        "title": "Notification SMS",
+        "description": "Integrate automatic SMS sending via our API into your information system. Alerts, OTP, confirmations, account statements.",
+        "features": ["HTTPS / SMPP API integration", "Secure OTP codes", "Banking transaction alerts", "Order confirmations"]
+      }
+    }
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Transparent pricing for every need",
+    "tabs": {
+      "sms": "SMS Billing",
+      "whatsapp": "WhatsApp Billing",
+      "resellers": "Reseller Offers"
+    },
+    "sms": {
+      "lite": {
+        "name": "Lite",
+        "volume": "< 99k SMS",
+        "price": "35 FCFA",
+        "unit": "/ SMS",
+        "features": ["Web portal sending", "Delivery reports", "Email support", "Shared sender name"]
+      },
+      "standard": {
+        "name": "Standard",
+        "volume": "100k — 499k SMS",
+        "price": "30 FCFA",
+        "unit": "/ SMS",
+        "popular": true,
+        "features": ["HTTPS & SMPP API", "DLR webhooks", "Custom sender name", "Priority support", "Analytics dashboard"]
+      },
+      "ultra": {
+        "name": "Ultra",
+        "volume": "> 500k SMS",
+        "price": "25 FCFA",
+        "unit": "/ SMS",
+        "features": ["Dedicated SMPP", "Up to 500 SMS/s throughput", "Dedicated account manager", "Guaranteed SLA", "Custom integration"]
+      }
+    },
+    "whatsapp": {
+      "authentication": { "name": "Authentication", "price": "4 FCFA", "description": "OTP, 2FA verification" },
+      "service": { "name": "Service", "price": "5 FCFA", "description": "Transactions, confirmations" },
+      "utility": { "name": "Utility", "price": "8 FCFA", "description": "Notifications, reminders" },
+      "marketing": { "name": "Marketing", "price": "22 FCFA", "description": "Promotions, newsletters" }
+    },
+    "cta": "Request a custom quote"
+  },
+  "docs": {
+    "title": "API Documentation",
+    "subtitle": "Integrate our APIs into your applications in minutes",
+    "languages": "Supported languages",
+    "tabs": {
+      "smsApi": "SMS HTTPS API",
+      "whatsappApi": "WhatsApp API",
+      "smpp": "SMPP",
+      "webhooks": "DLR / Webhooks"
+    }
+  }
+}

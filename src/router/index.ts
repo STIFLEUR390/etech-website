@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,17 +6,51 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView,
+      component: () => import('../pages/HomePage.vue'),
+      meta: { title: 'ETECH KEYS — SMS, WhatsApp Business API & USSD Cameroun' },
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue'),
+      path: '/whatsapp-api',
+      name: 'whatsapp-api',
+      component: () => import('../pages/WhatsAppApiPage.vue'),
+      meta: { title: 'WhatsApp Business API Cameroun | ETECH KEYS' },
+    },
+    {
+      path: '/sms-telecom',
+      name: 'sms-telecom',
+      component: () => import('../pages/SmsTelecomPage.vue'),
+      meta: { title: 'Bulk SMS Cameroun | Envoi SMS en Masse | ETECH KEYS' },
+    },
+    {
+      path: '/tarifs',
+      name: 'tarifs',
+      component: () => import('../pages/PricingPage.vue'),
+      meta: { title: 'Tarification SMS & WhatsApp | ETECH KEYS' },
+    },
+    {
+      path: '/docs',
+      name: 'docs',
+      component: () => import('../pages/DocsPage.vue'),
+      meta: { title: 'Documentation API | ETECH KEYS' },
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: () => import('../pages/ContactPage.vue'),
+      meta: { title: 'Contact | ETECH KEYS — Douala Cameroun' },
     },
   ],
+  scrollBehavior(_to, _from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    }
+    return { top: 0, behavior: 'smooth' }
+  },
+})
+
+// Update document title on navigation
+router.afterEach((to) => {
+  document.title = (to.meta.title as string) || 'ETECH KEYS'
 })
 
 export default router

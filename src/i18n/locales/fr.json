@@ -1,0 +1,246 @@
+{
+  "nav": {
+    "services": "Services",
+    "whatsapp": "Meta WhatsApp",
+    "pricing": "Tarifs",
+    "docs": "Documentation API",
+    "contact": "Contact",
+    "cta": "Tester l'API",
+    "clientArea": "Espace Client"
+  },
+  "hero": {
+    "badge": "🏆 Meta Tech Provider Officiel",
+    "title": "La plateforme SMS, WhatsApp Business API & USSD de référence au Cameroun",
+    "subtitle": "Envoyez des OTP, notifications et campagnes à vos clients en moins de 2 secondes avec une API unifiée.",
+    "cta": "Démarrer gratuitement",
+    "ctaSecondary": "Voir la Demo API"
+  },
+  "metrics": {
+    "openRate": "Taux d'ouverture WhatsApp",
+    "openRateValue": "98%",
+    "deliveryTime": "Temps de livraison SMS",
+    "deliveryTimeValue": "<2s",
+    "operators": "Opérateurs interconnectés",
+    "operatorsValue": "4",
+    "support": "Support Technique",
+    "supportValue": "24/7"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Solutions complètes pour votre communication",
+    "description": "De la messagerie SMS au cloud en passant par le WhatsApp Business — tout ce dont vous avez besoin.",
+    "items": {
+      "whatsapp": {
+        "title": "WhatsApp Business API",
+        "description": "Envoyez des messages WhatsApp professionnels. Templates, notifications, OTP, marketing. Connectez votre propre WABA en autonomie.",
+        "cta": "En savoir plus"
+      },
+      "sms": {
+        "title": "Bulk SMS",
+        "description": "Envoi SMS en masse vers MTN, Orange, Nexttel, Camtel. API HTTPS et SMPP. Rapports DLR en temps réel. Tarifs transparents.",
+        "cta": "En savoir plus"
+      },
+      "shortNumber": {
+        "title": "Numéro Court",
+        "description": "Numéros courts dédiés et partagés. Jeux concours, enquêtes, sondages. Compatible SMS bidirectionnel.",
+        "cta": "En savoir plus"
+      },
+      "ussd": {
+        "title": "Code USSD",
+        "description": "Créez des services USSD interactifs pour vos clients. Paiement mobile, transfert d'argent, information. Sans connexion internet.",
+        "cta": "En savoir plus"
+      },
+      "voiceServer": {
+        "title": "Serveur Vocal",
+        "description": "SVI, messages préenregistrés, campagnes vocales automatisées. Notifications et alertes par appel téléphonique.",
+        "cta": "En savoir plus"
+      },
+      "callCenter": {
+        "title": "Call Center",
+        "description": "Centre d'appels professionnel avec supervision en temps réel, enregistrement, scripts et reporting avancé.",
+        "cta": "En savoir plus"
+      },
+      "cloud": {
+        "title": "Hébergement Cloud",
+        "description": "Serveurs dédiés, VPS, hébergement web haute disponibilité. Infrastructure sécurisée et scalable pour vos applications.",
+        "cta": "En savoir plus"
+      },
+      "api": {
+        "title": "API HTTPS / SMPP",
+        "description": "Intégrez nos services dans vos applications. Documentation complète, SDKs, webhooks DLR. Support développeurs 24/7.",
+        "cta": "Documentation"
+      },
+      "wabaConnect": {
+        "title": "Connexion WABA Autonome",
+        "description": "Connectez votre propre WhatsApp Business Account en 3 minutes via notre Embedded Signup Meta. Aucune intervention technique.",
+        "cta": "Connecter mon WABA"
+      }
+    }
+  },
+  "trust": {
+    "title": "Ils nous font confiance"
+  },
+  "metaProvider": {
+    "title": "ETECH KEYS est un partenaire Tech Provider Meta WhatsApp Business",
+    "description": "En tant que Tech Provider agréé, nous pouvons connecter votre entreprise directement à l'API WhatsApp Business avec toutes les permissions avancées.",
+    "app_id": "App ID",
+    "waba": "WABA Principal",
+    "business_manager": "Business Manager ID",
+    "status": "Statut",
+    "live": "Live — Advanced Access"
+  },
+  "cta": {
+    "ready": "Prêt à booster votre communication ?",
+    "readyDescription": "Créez votre compte gratuitement et envoyez votre premier SMS en moins de 5 minutes.",
+    "createAccount": "Créer un compte gratuit"
+  },
+  "footer": {
+    "description": "ETECH KEYS — Tech Provider Officiel Meta WhatsApp Business. Solutions SMS, WhatsApp, USSD et Cloud au Cameroun.",
+    "services": "Services",
+    "company": "Entreprise",
+    "legal": "Légal",
+    "contact": "Contact",
+    "address": "Douala, Cameroun",
+    "cgu": "CGU",
+    "privacy": "Politique de confidentialité",
+    "status": "Status API",
+    "copyright": "© 2024 ETECH KEYS. Tous droits réservés.",
+    "metaBadge": "Meta Tech Provider Officiel"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Parlons de votre projet",
+    "description": "Notre équipe répond sous 24h. Pour les urgences, contactez-nous directement par WhatsApp.",
+    "form": {
+      "name": "Nom complet",
+      "email": "Adresse email",
+      "phone": "Téléphone",
+      "service": "Service concerné",
+      "message": "Votre message",
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès !",
+      "error": "Une erreur est survenue. Réessayez."
+    },
+    "services": {
+      "whatsapp": "WhatsApp Business API",
+      "sms": "Bulk SMS",
+      "ussd": "Code USSD",
+      "shortNumber": "Numéro Court",
+      "voice": "Serveur Vocal",
+      "cloud": "Hébergement Cloud",
+      "other": "Autre"
+    },
+    "whatsapp": {
+      "title": "Discuter sur WhatsApp 24/7",
+      "description": "Pour les urgences, contactez-nous directement sur WhatsApp."
+    }
+  },
+  "whatsappApi": {
+    "title": "WhatsApp Business API",
+    "subtitle": "Connectez votre WABA en autonomie via Embedded Signup",
+    "features": {
+      "templates": "Templates Approuvés",
+      "templatesDesc": "Créez et soumettez vos templates Meta. Utility, Marketing, Authentication. Gestion depuis le portail.",
+      "embeddedSignup": "Embedded Signup",
+      "embeddedSignupDesc": "Connectez votre propre WABA en 3 minutes. Abonnement webhooks automatique. Token longue durée.",
+      "notifications": "Notifications & OTP",
+      "notificationsDesc": "Alertes, confirmations, codes de vérification. Livraison garantie avec statut DLR en temps réel.",
+      "richMedia": "Médias Riches",
+      "richMediaDesc": "Images, documents PDF, vidéos, boutons interactifs. Expérience conversationnelle complète.",
+      "api": "API REST",
+      "apiDesc": "API simple et bien documentée. Webhooks pour les messages reçus et les DLR. SDKs disponibles.",
+      "analytics": "Rapport & Analytics",
+      "analyticsDesc": "Tableau de bord en temps réel. Taux de livraison, de lecture, statistiques par template et par client."
+    },
+    "messageTypes": {
+      "title": "Choisissez le bon type de template",
+      "utility": "UTILITY",
+      "utilityDesc": "Notifications transactionnelles, confirmations de commande, rappels d'échéance, statuts de livraison.",
+      "authentication": "AUTHENTICATION",
+      "authenticationDesc": "Codes OTP, vérification d'identité, authentification à deux facteurs. Format sécurisé Meta.",
+      "marketing": "MARKETING",
+      "marketingDesc": "Promotions, offres spéciales, anniversaires, newsletters. Engagement client et fidélisation."
+    },
+    "embeddedSignup": {
+      "title": "Connectez votre propre WABA en autonomie",
+      "description": "En tant que Tech Provider Meta agréé, ETECH KEYS vous permet de connecter votre compte WhatsApp Business directement depuis notre portail, sans aucune intervention technique.",
+      "step1": "Authentification Meta (popup sécurisé)",
+      "step2": "Sélection WABA & numéro",
+      "step3": "Génération token + abonnement webhooks",
+      "step4": "✅ Compte actif — prêt à envoyer"
+    }
+  },
+  "smsTelecom": {
+    "title": "Envoi SMS en masse vers tous les opérateurs du Cameroun",
+    "subtitle": "Alertes, notifications, OTP, campagnes marketing. MTN, Orange, Nexttel et Camtel. Livraison instantanée avec accusé de réception en temps réel.",
+    "deliveryRate": "Taux de livraison",
+    "deliveryTime": "Temps de livraison",
+    "operators": "Opérateurs couverts",
+    "offers": {
+      "title": "Nos offres SMS",
+      "subtitle": "Deux types de services SMS",
+      "promotional": {
+        "title": "SMS Promotionnels",
+        "description": "Envoi de SMS en masse en temps réel ou différé pour vos campagnes marketing, promotions, événements. Personnalisation du nom d'expéditeur.",
+        "features": ["Campagnes marketing ciblées", "Envoi immédiat ou programmé", "Sender name personnalisé", "Rapports de livraison détaillés"]
+      },
+      "notification": {
+        "title": "SMS de Notification",
+        "description": "Intégez l'envoi automatique de SMS via notre API à votre système d'information. Alertes, OTP, confirmations, relevés de compte.",
+        "features": ["Intégration API HTTPS / SMPP", "Codes OTP sécurisés", "Alertes transactions bancaires", "Confirmations de commande"]
+      }
+    }
+  },
+  "pricing": {
+    "title": "Tarification",
+    "subtitle": "Des tarifs transparents pour chaque besoin",
+    "tabs": {
+      "sms": "Facturation SMS",
+      "whatsapp": "Facturation WhatsApp",
+      "resellers": "Offres Revendeurs"
+    },
+    "sms": {
+      "lite": {
+        "name": "Lite",
+        "volume": "< 99k SMS",
+        "price": "35 FCFA",
+        "unit": "/ SMS",
+        "features": ["Envoi via portail web", "Rapports de livraison", "Support email", "Sender name partagé"]
+      },
+      "standard": {
+        "name": "Standard",
+        "volume": "100k — 499k SMS",
+        "price": "30 FCFA",
+        "unit": "/ SMS",
+        "popular": true,
+        "features": ["API HTTPS & SMPP", "Webhooks DLR", "Sender name personnalisé", "Support prioritaire", "Dashboard analytics"]
+      },
+      "ultra": {
+        "name": "Ultra",
+        "volume": "> 500k SMS",
+        "price": "25 FCFA",
+        "unit": "/ SMS",
+        "features": ["Dédié SMPP", "Débit jusqu'à 500 SMS/s", "Account manager dédié", "SLA garanti", "Intégration sur-mesure"]
+      }
+    },
+    "whatsapp": {
+      "authentication": { "name": "Authentication", "price": "4 FCFA", "description": "OTP, vérification 2FA" },
+      "service": { "name": "Service", "price": "5 FCFA", "description": "Transactions, confirmations" },
+      "utility": { "name": "Utility", "price": "8 FCFA", "description": "Notifications, rappels" },
+      "marketing": { "name": "Marketing", "price": "22 FCFA", "description": "Promotions, newsletters" }
+    },
+    "cta": "Demander un devis sur-mesure"
+  },
+  "docs": {
+    "title": "Documentation API",
+    "subtitle": "Intégez nos APIs dans vos applications en minutes",
+    "languages": "Langages supportés",
+    "tabs": {
+      "smsApi": "API SMS HTTPS",
+      "whatsappApi": "API WhatsApp",
+      "smpp": "SMPP",
+      "webhooks": "DLR / Webhooks"
+    }
+  }
+}
