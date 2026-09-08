@@ -51,12 +51,7 @@ onUnmounted(() => {
     <nav class="container-custom h-16 md:h-20 flex items-center justify-between">
       <!-- Logo -->
       <RouterLink to="/" class="flex items-center gap-2 group" @click="closeMobileMenu">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-blue to-brand-green flex items-center justify-center">
-          <span class="text-white font-bold text-lg">E</span>
-        </div>
-        <span class="text-xl font-bold text-brand-dark dark:text-white hidden sm:block">
-          ETECH <span class="text-brand-green">KEYS</span>
-        </span>
+        <img src="/logo.svg" alt="ETECH KEYS" class="h-10 w-auto" />
       </RouterLink>
 
       <!-- Desktop Navigation -->

@@ -1,10 +1,17 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import { usePageSeo } from '@/plugins/unhead'
+
+const { t } = useI18n()
+
+usePageSeo(
+  'Tarification SMS & WhatsApp | ETECH KEYS',
+  'Tarifs SMS et WhatsApp Business au Cameroun. SMS à partir de 25 FCFA. WhatsApp à partir de 4 FCFA. Offres revendeurs.'
+)
 import { ArrowRight } from 'lucide-vue-next'
 import BaseButton from '@/components/ui/BaseButton.vue'
 import PricingTable from '@/components/interactive/PricingTable.vue'
 
-const { t } = useI18n()
 </script>
 
 <template>

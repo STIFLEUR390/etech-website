@@ -1,6 +1,14 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { usePageSeo } from '@/plugins/unhead'
+
+const { t } = useI18n()
+
+usePageSeo(
+  'Documentation API | ETECH KEYS',
+  'Documentation développeurs ETECH KEYS. API SMS HTTPS, WhatsApp Business API, SMPP. Exemples de code en cURL, JS, Python, PHP.'
+)
 import {
   BookOpen,
   Key,
@@ -13,7 +21,6 @@ import {
 } from 'lucide-vue-next'
 import CodeSnippet from '@/components/ui/CodeSnippet.vue'
 
-const { t } = useI18n()
 
 const activeSection = ref('intro')
 

@@ -1,5 +1,13 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import { usePageSeo } from '@/plugins/unhead'
+
+const { t } = useI18n()
+
+usePageSeo(
+  'Bulk SMS Cameroun | Envoi SMS en Masse | ETECH KEYS',
+  'Envoi SMS en masse vers MTN, Orange, Nexttel, Camtel. API HTTPS/SMPP. Livraison instantanée avec DLR en temps réel.'
+)
 import {
   Send,
   ArrowRight,
@@ -22,7 +30,6 @@ import {
 import BaseButton from '@/components/ui/BaseButton.vue'
 import CodeSnippet from '@/components/ui/CodeSnippet.vue'
 
-const { t } = useI18n()
 
 const operators = [
   { name: 'MTN', color: '#FFCC00', textColor: '#000' },

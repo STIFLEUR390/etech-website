@@ -1,5 +1,13 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import { usePageSeo } from '@/plugins/unhead'
+
+const { t } = useI18n()
+
+usePageSeo(
+  'ETECH KEYS — SMS, WhatsApp Business API & USSD Cameroun',
+  'La plateforme SMS, WhatsApp Business API & USSD de référence au Cameroun. Envoyez des OTP, notifications et campagnes en moins de 2 secondes.'
+)
 import {
   MessageSquare,
   Send,
@@ -24,7 +32,6 @@ import {
 import BaseButton from '@/components/ui/BaseButton.vue'
 import PhoneSimulator from '@/components/interactive/PhoneSimulator.vue'
 
-const { t } = useI18n()
 
 const services = [
   { key: 'whatsapp', icon: MessageSquare, color: 'bg-brand-green', href: '/whatsapp-api' },

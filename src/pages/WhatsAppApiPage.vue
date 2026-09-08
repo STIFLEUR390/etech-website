@@ -1,5 +1,13 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import { usePageSeo } from '@/plugins/unhead'
+
+const { t } = useI18n()
+
+usePageSeo(
+  'WhatsApp Business API Cameroun | Tech Provider Meta | ETECH KEYS',
+  "WhatsApp Business API au Cameroun. Tech Provider Meta Officiel. Embedded Signup, templates, OTP, notifications. Taux d'ouverture de 98%."
+)
 import {
   CheckCircle2,
   ArrowRight,
@@ -22,7 +30,6 @@ import {
 import BaseButton from '@/components/ui/BaseButton.vue'
 import WaPricingCalculator from '@/components/interactive/WaPricingCalculator.vue'
 
-const { t } = useI18n()
 
 const features = [
   { key: 'templates', icon: FileText, color: 'bg-brand-blue-primary' },

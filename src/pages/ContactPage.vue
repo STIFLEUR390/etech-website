@@ -1,6 +1,14 @@
 <script setup lang="ts">
 import { ref, reactive } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { usePageSeo } from '@/plugins/unhead'
+
+const { t } = useI18n()
+
+usePageSeo(
+  'Contact | ETECH KEYS — Douala Cameroun',
+  'Contactez ETECH KEYS à Douala, Cameroun. WhatsApp 24/7, téléphone, formulaire de contact. Support technique réactif.'
+)
 import {
   Send,
   Phone,
@@ -11,8 +19,6 @@ import {
   Loader2,
 } from 'lucide-vue-next'
 import BaseButton from '@/components/ui/BaseButton.vue'
-
-const { t } = useI18n()
 
 const form = reactive({
   name: '',
