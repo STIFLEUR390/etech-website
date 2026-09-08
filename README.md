@@ -71,6 +71,15 @@ src/
 └── main.ts
 ```
 
+## 📱 PWA (Progressive Web App)
+
+Le site est une PWA installable. Les utilisateurs peuvent l'ajouter à leur écran d'accueil.
+
+- Service Worker avec cache des ressources
+- Mode hors ligne via Workbox
+- Icônes PWA complètes (192x192, 512x512, maskable)
+- Manifest Web App configuré
+
 ## 🚀 Installation
 
 ```bash
@@ -136,12 +145,46 @@ npx vue-i18n-extract report --vueFiles 'src/**/*.vue' --languageFiles 'src/i18n/
 
 ## 📦 Déploiement
 
-Le site peut être déployé sur :
-- **Vercel** : `vercel --prod`
-- **Netlify** : Connecter le repo GitHub
-- **Cloudflare Pages** : Builder `bun run build`, output `dist/`
+### Vercel
+```bash
+# Installer Vercel CLI
+npm i -g vercel
 
-## 🔧 SEO
+# Déployer
+vercel --prod
+```
+Le fichier `vercel.json` est déjà configuré avec les headers PWA et rewrites SPA.
+
+### NGINX
+```bash
+# Copier la config
+sudo cp nginx.conf /etc/nginx/sites-available/etech-keys
+sudo ln -s /etc/nginx/sites-available/etech-keys /etc/nginx/sites-enabled/
+
+# Tester et recharger
+sudo nginx -t
+sudo systemctl reload nginx
+```
+
+### Apache
+```bash
+# Le fichier .htaccess est déjà en place
+# Assurez-vous que mod_rewrite et mod_headers sont activés
+sudo a2enmod rewrite headers
+sudo systemctl restart apache2
+```
+
+### Netlify / Cloudflare Pages
+- Connecter le repo GitHub
+- Build command: `bun run build`
+- Output directory: `dist/`
+
+## 🔧 SEO & Métadonnées
+
+- Open Graph tags pour le partage social
+- Twitter Cards
+- Meta descriptions par page
+- manifest.webmanifest pour les PWA
 
 Chaque page dispose de métadonnées OpenGraph et Twitter Cards pour un partage optimal sur les réseaux sociaux.
 
