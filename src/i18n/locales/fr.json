@@ -5,7 +5,11 @@
     "pricing": "Tarifs",
     "docs": "Documentation API",
     "contact": "Contact",
+    "api": "Documentation API",
     "status": "Status API",
+    "about": "À propos",
+    "terms": "Conditions",
+    "login": "Se connecter",
     "cta": "Tester l'API",
     "clientArea": "Espace Client"
   },

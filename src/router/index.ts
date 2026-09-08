@@ -13,7 +13,7 @@ const router = createRouter({
       path: '/whatsapp-api',
       name: 'whatsapp-api',
       component: () => import('../pages/WhatsAppApiPage.vue'),
-      meta: { title: 'WhatsApp Business API Cameroun | ETECH KEYS' },
+      meta: { title: 'WhatsApp Business API Cameroun | Tech Provider Meta | ETECH KEYS' },
     },
     {
       path: '/sms-telecom',
@@ -22,10 +22,40 @@ const router = createRouter({
       meta: { title: 'Bulk SMS Cameroun | Envoi SMS en Masse | ETECH KEYS' },
     },
     {
+      path: '/numero-court',
+      name: 'numero-court',
+      component: () => import('../pages/NumeroCourtPage.vue'),
+      meta: { title: 'Numéro Court Cameroun | ETECH KEYS' },
+    },
+    {
+      path: '/ussd',
+      name: 'ussd',
+      component: () => import('../pages/UssdPage.vue'),
+      meta: { title: 'Code USSD Cameroun | Menu interactif | ETECH KEYS' },
+    },
+    {
+      path: '/serveur-vocal',
+      name: 'serveur-vocal',
+      component: () => import('../pages/ServeurVocalPage.vue'),
+      meta: { title: 'Serveur Vocal SVI Cameroun | ETECH KEYS' },
+    },
+    {
+      path: '/call-center',
+      name: 'call-center',
+      component: () => import('../pages/CallCenterPage.vue'),
+      meta: { title: 'Call Center Cloud Cameroun | ETECH KEYS' },
+    },
+    {
+      path: '/cloud',
+      name: 'cloud',
+      component: () => import('../pages/CloudPage.vue'),
+      meta: { title: 'Hébergement Cloud Cameroun | ETECH KEYS' },
+    },
+    {
       path: '/tarifs',
       name: 'tarifs',
       component: () => import('../pages/PricingPage.vue'),
-      meta: { title: 'Tarification SMS & WhatsApp | ETECH KEYS' },
+      meta: { title: 'Tarifs SMS & WhatsApp Business | ETECH KEYS' },
     },
     {
       path: '/docs',

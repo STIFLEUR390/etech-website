@@ -5,7 +5,11 @@
     "pricing": "Pricing",
     "docs": "API Documentation",
     "contact": "Contact",
+    "api": "API Documentation",
     "status": "API Status",
+    "about": "About",
+    "terms": "Terms",
+    "login": "Log in",
     "cta": "Try the API",
     "clientArea": "Client Area"
   },

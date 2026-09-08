@@ -36,11 +36,11 @@ import PhoneSimulator from '@/components/interactive/PhoneSimulator.vue'
 const services = [
   { key: 'whatsapp', icon: MessageSquare, color: 'bg-brand-green', href: '/whatsapp-api' },
   { key: 'sms', icon: Send, color: 'bg-brand-blue-primary', href: '/sms-telecom' },
-  { key: 'shortNumber', icon: Hash, color: 'bg-purple-500', href: '/sms-telecom' },
-  { key: 'ussd', icon: PhoneCall, color: 'bg-orange-500', href: '/sms-telecom' },
-  { key: 'voiceServer', icon: Headphones, color: 'bg-pink-500', href: '/sms-telecom' },
-  { key: 'callCenter', icon: Headphones, color: 'bg-cyan-500', href: '/sms-telecom' },
-  { key: 'cloud', icon: Cloud, color: 'bg-indigo-500', href: '/sms-telecom' },
+  { key: 'shortNumber', icon: Hash, color: 'bg-purple-500', href: '/numero-court' },
+  { key: 'ussd', icon: PhoneCall, color: 'bg-orange-500', href: '/ussd' },
+  { key: 'voiceServer', icon: Headphones, color: 'bg-pink-500', href: '/serveur-vocal' },
+  { key: 'callCenter', icon: Headphones, color: 'bg-cyan-500', href: '/call-center' },
+  { key: 'cloud', icon: Cloud, color: 'bg-indigo-500', href: '/cloud' },
   { key: 'api', icon: Code2, color: 'bg-emerald-600', href: '/docs' },
   { key: 'wabaConnect', icon: Plug, color: 'bg-brand-green', href: '/whatsapp-api' },
 ]

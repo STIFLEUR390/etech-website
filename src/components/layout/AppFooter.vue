@@ -10,20 +10,22 @@ const currentYear = new Date().getFullYear()
 const serviceLinks = [
   { key: 'whatsapp', to: '/whatsapp-api' },
   { key: 'sms', to: '/sms-telecom' },
-  { key: 'ussd', to: '/sms-telecom' },
-  { key: 'shortNumber', to: '/sms-telecom' },
+  { key: 'ussd', to: '/ussd' },
+  { key: 'shortNumber', to: '/numero-court' },
   { key: 'api', to: '/docs' },
 ]
 
-const companyLinks = [
+const resourceLinks = [
+  { key: 'api', to: '/docs' },
   { key: 'pricing', to: '/tarifs' },
+  { key: 'about', to: '#' },
   { key: 'contact', to: '/contact' },
-  { key: 'status', to: '#' },
+  { key: 'terms', to: '#' },
 ]
 
 const legalLinks = [
-  { key: 'cgu', to: '#' },
   { key: 'privacy', to: '#' },
+  { key: 'cgu', to: '#' },
 ]
 </script>
 
@@ -66,7 +68,7 @@ const legalLinks = [
         <div>
           <h3 class="text-white font-semibold mb-4">{{ t('footer.company') }}</h3>
           <ul class="space-y-3">
-            <li v-for="link in companyLinks" :key="link.key">
+            <li v-for="link in resourceLinks" :key="link.key">
               <RouterLink
                 :to="link.to"
                 class="text-sm hover:text-brand-green transition-colors"
