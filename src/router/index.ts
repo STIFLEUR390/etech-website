@@ -69,6 +69,12 @@ const router = createRouter({
       component: () => import('../pages/ContactPage.vue'),
       meta: { title: 'Contact | ETECH KEYS — Douala Cameroun' },
     },
+    {
+      path: '/a-propos',
+      name: 'about',
+      component: () => import('../pages/AboutPage.vue'),
+      meta: { title: 'À Propos | ETECH KEYS — Leader SMS & WhatsApp Cameroun' },
+    },
   ],
   scrollBehavior(_to, _from, savedPosition) {
     if (savedPosition) {
