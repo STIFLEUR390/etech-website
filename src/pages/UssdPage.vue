@@ -107,13 +107,13 @@ const useCases = [
           <div class="flex justify-center">
             <div class="w-[280px] rounded-[3rem] bg-gray-900 p-3 shadow-2xl">
               <div class="absolute top-3 left-1/2 -translate-x-1/2 w-28 h-6 bg-gray-900 rounded-b-2xl z-10"></div>
-              <div class="rounded-[2.5rem] overflow-hidden bg-white p-4">
+              <div class="rounded-[2.5rem] overflow-hidden bg-white dark:bg-gray-100 p-4">
                 <div class="text-center mb-4">
-                  <span class="text-xs font-semibold text-brand-dark">9:41</span>
+                  <span class="text-xs font-semibold text-gray-900">9:41</span>
                 </div>
-                <div class="bg-gray-100 rounded-xl p-4 text-center">
-                  <p class="text-sm font-semibold text-brand-dark mb-2">*123#</p>
-                  <div class="space-y-2 text-xs text-left">
+                <div class="bg-gray-100 dark:bg-gray-200 rounded-xl p-4 text-center">
+                  <p class="text-sm font-semibold text-gray-900 mb-2">*123#</p>
+                  <div class="space-y-2 text-xs text-left text-gray-800">
                     <p>Bienvenue chez ETECH KEYS</p>
                     <p>1. Consulter mon solde</p>
                     <p>2. Recharger mon compte</p>
@@ -122,7 +122,7 @@ const useCases = [
                     <p>0. Quitter</p>
                   </div>
                   <div class="mt-3 flex items-center gap-2">
-                    <input type="text" placeholder="Répondre :" class="flex-1 px-3 py-2 text-xs border rounded-lg" />
+                    <input type="text" placeholder="Répondre :" class="flex-1 px-3 py-2 text-xs border border-gray-300 rounded-lg text-gray-900 bg-white" />
                     <button class="px-3 py-2 bg-orange-500 text-white text-xs rounded-lg">OK</button>
                   </div>
                 </div>
